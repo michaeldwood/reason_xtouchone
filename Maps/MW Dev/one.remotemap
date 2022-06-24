@@ -1,0 +1,222 @@
+Propellerhead Remote Mapping File						
+File Format Version	1.0.0					
+Control Surface Manufacturer	MichaelWood.Dev
+Control Surface Model	XTouchOne
+Map Version	1.0.0	
+
+Scope	Propellerheads	Reason Master Section
+// Groups
+Define Group	Flip	Normal	ShiftMode
+Define Group	RotaryMode	Pan	Send1	Send2	Send3	Send4	Send5	Send6	Send7	Send8	LPF	HPF	Gain
+Define Group	FX1Enabled	FX1On	FX1Off
+Define Group	RotaryDirection	RotaryLeft	RotaryRight
+Define Group 	AssignDisplay	Assignment	Junk1
+
+// Basic Mapping
+//	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
+//Map	F1 Button		Flip=ShiftMode			Normal
+//Map	F1 Button LED		1		Solid	ShiftMode
+//Map	F1 Button		Flip=Normal			ShiftMode
+
+Map	Channel Left Button		Previous Remote Base Channel
+Map	Channel Right Button		Next Remote Base Channel
+Map	Master Fader		Master Level
+Map	Redo Button		Dim -20dB
+Map	Fader 1		Channel 1 Level			Normal
+Map	Fader 1		Channel 1 Level			ShiftMode
+Map	Mute 1		Channel 1 Mute
+Map	Solo 1		Channel 1 Solo
+Map	Peak Meter 1		Channel 1 VU Meter
+
+Map	LCD Row 2 Channel 1		Channel 1 Channel Name			Normal
+Map	LCD Row 1 Channel 1		"Pan"			Pan
+Map	LCD Row 1 Channel 1		"Gain"			Gain
+Map	LCD Row 1 Channel 1		"FX 1"			Send1
+Map	LCD Row 1 Channel 1		"FX 2"			Send2
+Map	LCD Row 1 Channel 1		"FX 3"			Send3
+Map	LCD Row 1 Channel 1		"FX 4"			Send4
+Map	LCD Row 1 Channel 1		"FX 5"			Send5
+Map	LCD Row 1 Channel 1		"FX 6"			Send6
+Map	LCD Row 1 Channel 1		"FX 7"			Send7
+Map	LCD Row 1 Channel 1		"FX 8"			Send8
+Map	LCD Row 1 Channel 1		"LPF"			LPF
+Map	LCD Row 1 Channel 1		"HPF"			HPF
+
+//Rotary Modes
+//Map	Rotary Button 1		RotaryMode=Gain			Pan
+//Map	Rotary Button 1		RotaryMode=Pan			HPF
+//Map	Rotary Button 1		RotaryMode=Send1			Gain
+//Map	Rotary Button 1		RotaryMode=Send2			Send1
+//Map	Rotary Button 1		RotaryMode=Send3			Send2
+//Map	Rotary Button 1		RotaryMode=Send4			Send3
+//Map	Rotary Button 1		RotaryMode=Send5			Send4
+//Map	Rotary Button 1		RotaryMode=Send6			Send5
+//Map	Rotary Button 1		RotaryMode=Send7			Send6
+//Map	Rotary Button 1		RotaryMode=Send8			Send7
+//Map	Rotary Button 1		RotaryMode=LPF			Send8
+//Map	Rotary Button 1		RotaryMode=HPF			LPF
+
+Map	Fader Bank Left Button		RotaryDirection=RotaryLeft			
+Map	Fader Bank Right Button 		RotaryDirection=RotaryRight			
+Map	Fader Bank Left Button LED		1		Flash	RotaryLeft
+Map	Fader Bank Right Button LED		1		Flash	RotaryRight
+
+Map	Fader Bank Right Button		RotaryMode=Pan			RotaryRight	HPF	
+Map	Fader Bank Right Button		RotaryMode=Send1			RotaryRight	Gain
+Map	Fader Bank Right Button		RotaryMode=Send2			RotaryRight	Send1
+Map	Fader Bank Right Button		RotaryMode=Send3			RotaryRight	Send2
+Map	Fader Bank Right Button		RotaryMode=Send4			RotaryRight	Send3
+Map	Fader Bank Right Button		RotaryMode=Send5			RotaryRight	Send4
+Map	Fader Bank Right Button		RotaryMode=Send6			RotaryRight	Send5
+Map	Fader Bank Right Button		RotaryMode=Send7			RotaryRight	Send6
+Map	Fader Bank Right Button		RotaryMode=Send8			RotaryRight	Send7
+Map	Fader Bank Right Button		RotaryMode=LPF			RotaryRight	Send8
+Map	Fader Bank Right Button		RotaryMode=HPF			RotaryRight	LPF
+Map	Fader Bank Right Button		RotaryMode=Gain			RotaryRight	Pan
+
+Map	Fader Bank Left Button		RotaryMode=Pan			RotaryLeft	Gain		
+Map	Fader Bank Left Button		RotaryMode=Gain			RotaryLeft	Send1	
+Map	Fader Bank Left Button		RotaryMode=Send1			RotaryLeft	Send2	
+Map	Fader Bank Left Button		RotaryMode=Send2			RotaryLeft	Send3	
+Map	Fader Bank Left Button		RotaryMode=Send3			RotaryLeft	Send4	
+Map	Fader Bank Left Button		RotaryMode=Send4			RotaryLeft	Send5	
+Map	Fader Bank Left Button		RotaryMode=Send5			RotaryLeft	Send6	
+Map	Fader Bank Left Button		RotaryMode=Send6			RotaryLeft	Send7	
+Map	Fader Bank Left Button		RotaryMode=Send7			RotaryLeft	Send8	
+Map	Fader Bank Left Button		RotaryMode=Send8			RotaryLeft	LPF	
+Map	Fader Bank Left Button		RotaryMode=LPF			RotaryLeft	HPF	
+Map	Fader Bank Left Button		RotaryMode=HPF			RotaryLeft	Pan
+
+Map	Rotary 1		Channel 1 Pan		Boost/Cut	Pan
+
+Map	Rotary 1		Channel 1 Input Gain		Boost/Cut	Gain
+
+Map	Rotary 1		Channel 1 FX1 Send Level		Single Dot	Send1
+//Map	Rotary Button 1		Channel 1 FX1 Send On			Send1
+//Map	LCD Row 2 Channel 1		Channel 1 FX1 Send On			Send1	Normal
+Map	Select 1		Channel 1 FX1 Send On			Send1	Normal
+
+Map	Rotary 1		Channel 1 FX2 Send Level		Single Dot	Send2
+//Map	Rotary Button 1		Channel 1 FX2 Send On			Send2
+Map	Select 1		Channel 1 FX2 Send On			Normal	Send2
+
+Map	Rotary 1		Channel 1 FX3 Send Level		Single Dot	Send3
+//Map	Rotary Button 1		Channel 1 FX3 Send On			Send3
+Map	Select 1		Channel 1 FX3 Send On			Normal	Send3
+
+Map	Rotary 1		Channel 1 FX4 Send Level		Single Dot	Send4
+//Map	Rotary Button 1		Channel 1 FX4 Send On			Send4
+Map	Select 1		Channel 1 FX4 Send On			Normal	Send4
+
+Map	Rotary 1		Channel 1 FX5 Send Level		Single Dot	Send5
+//Map	Rotary Button 1		Channel 1 FX5 Send On			Send5
+Map	Select 1		Channel 1 FX5 Send On			Normal	Send5
+
+Map	Rotary 1		Channel 1 FX6 Send Level		Single Dot	Send6
+//Map	Rotary Button 1		Channel 1 FX6 Send On			Send6
+Map	Select 1		Channel 1 FX6 Send On			Normal	Send6
+
+Map	Rotary 1		Channel 1 FX7 Send Level		Single Dot	Send7
+//Map	Rotary Button 1		Channel 1 FX7 Send On			Send7
+Map	Select 1		Channel 1 FX7 Send On			Normal	Send7
+
+Map	Rotary 1		Channel 1 FX8 Send Level		Single Dot	Send8
+//Map	Rotary Button 1		Channel 1 FX8 Send On			Send8
+Map	Select 1		Channel 1 FX8 Send On			Normal	Send8
+
+Map	Rotary 1		Channel 1 LPF Frequency		Single Dot	LPF
+//Map	Rotary Button 1		Channel 1 LPF On			LPF
+Map	Select 1		Channel 1 LPF On			LPF	Normal
+
+Map	Rotary 1		Channel 1 HPF Frequency		Single Dot	HPF
+//Map	Rotary Button 1		Channel 1 HPF On			HPF
+Map	Select 1		Channel 1 HPF On			HPF	Normal
+
+
+Map	Record 1		Channel 1 Invert Phase
+Map	F5 Button		All Mutes Off
+Map	F6 Button		All Solo Off
+
+/////////////////////// MASTER Section
+
+
+
+
+
+
+
+
+Scope	Propellerheads	Reason Document
+//	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
+Define Group	Pos	Song	Left	Right
+Define Group	PosDisplay	Time	BarsBeats
+Define Group	ZoomBtnMode	Zoom	Navigate
+Define Group	Wheel	Coarse	Fine
+
+//Scrub Wheel
+Map	Scrub Button		Pos=Song			Right
+Map	Scrub Button		Pos=Left			Song
+Map	Scrub Button		Pos=Right			Left
+Map	Scrub Button LED		1		Solid	Left
+Map	Scrub Button LED		1		Flash	Right
+Map	Jog Wheel		Song Position	15360		Coarse	Song
+Map	Jog Wheel		Song Position	3840		Fine	Song
+Map	Jog Wheel		Left Loop	15360		Coarse	Left
+Map	Jog Wheel		Left Loop	3840		Fine	Left
+Map	Jog Wheel		Right Loop	15360		Coarse	Right
+Map	Jog Wheel		Right Loop	3840		Fine	Right
+
+//Zoom Buttons
+Map	Zoom Button		ZoomBtnMode=Zoom			Navigate
+Map	Zoom Button		ZoomBtnMode=Navigate			Zoom
+Map	Zoom Button LED		1		Flash	Navigate
+Map	Zoom Button LED		1		Solid	Zoom
+Map	Up Button		Target Previous Track			Navigate
+Map	Down Button		Target Next Track			Navigate
+//Map	Down Button		Zoom Out			Zoom		
+//Map	Right Button		Horizontal Zoom			Zoom
+Map	Right Button		Bar Position Up			Navigate
+Map	Left Button		Bar Position Down			Navigate
+
+
+Map	End Button		Loop On/Off
+Map	PI Button		New Overdub
+Map	PO Button		New Alternative Take
+Map	SMPTE/Beats Button		PosDisplay=Time			BarsBeats
+Map	SMPTE/Beats Button		PosDisplay=BarsBeats			Time
+Map	SMPTE/Beats Button LED		1		Solid	Time
+Map	SMPTE/Beats Button LED		1		Flash	BarsBeats
+
+Map	Play Button		Play
+Map	Stop Button		Stop
+Map	Record Button		Record
+Map	Rewind Button		Rewind
+Map	Fast Fwd Button		Fast Forward
+Map	Loop Button		Click On/Off
+Map	Read/Off Button		Reset Automation Override
+Map	Home Button		Precount On/Off
+Map	Frm Left Button		Goto Left Locator
+Map	Frm Right Button		Goto Right Locator
+
+Map	Touch Button		Auto-quantize
+Map	F1 Button		Undo
+//Map	Left Button		Bar Position Down
+//Map	Right Button		Bar Position Up
+Map	Mixr Button		Redo
+//Map	Clr Solo Button		Undo
+
+// Bar Beats Display
+Map	Bars Display		Bar Position			BarsBeats	Song
+Map	Beats Display		Beat Position			BarsBeats	Song
+Map	Sub-division Display		Sixteenth Position			BarsBeats	Song
+Map	Ticks Display		Tick Position			BarsBeats	Song
+Map	Bars Display		Hour Position			Time	Song
+Map	Beats Display		Minute Position			Time	Song
+Map	Sub-division Display		Second Position			Time	Song
+Map	Bars Display		Left Loop Bar			Left
+Map	Beats Display		Left Loop Beat			Left
+Map	Sub-division Display		Left Loop 16th			Left
+Map	Bars Display		Right Loop Bar			Right
+Map	Beats Display		Right Loop Beat			Right
+Map	Sub-division Display		Right Loop 16th			Right
+Map	F2 Button		Flip

@@ -1,0 +1,17 @@
+version={1,6,9}
+
+function remote_supported_control_surfaces()
+	local surfaces =
+		{
+			{ 
+				manufacturer="MichaelWood.Dev", 
+				model="XTouchOne",
+				source="XTouchOne.lua", 
+				picture="XTouchOne.png",
+				in_ports={{description="Input"}}, 
+				out_ports={{description="Output"}},
+				setup_info_text="MichaelWood.Dev" 
+			}
+		}
+	return surfaces
+end
